@@ -32,14 +32,14 @@
             <?php foreach($result as $tarefa){ ?>
             <tr>
                 <td>
-                  <a href="detalhes.php?id=<?= $tarefa['idtarefas'] ?>"><?=$tarefa['titulo']?></a>
+                  <a href="detalhes.php?id=<?= $tarefa['idtarefas']?>"><?=$tarefa['titulo']?></a>
                 </td> 
                 <td><?=$tarefa["data"]?></td>
                 <td><?=$tarefa["hora"]?></td>
                 <td><?=$tarefa["idcategoriaFK"]?></td>
                 <td><?=$tarefa["descricao"]?></td>
                 <td>
-                    <a href="">Excluir</a>
+                    <a href="excluir.php?id=<?=$tarefa['idtarefas']?>">Excluir</a>
                     <a href="">Editar</a>
                 </td>
             </tr>
