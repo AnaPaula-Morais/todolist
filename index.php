@@ -23,7 +23,9 @@
             </tr>
             <?php foreach($result as $tarefa){ ?>
             <tr>
-                <td><?=$tarefa["titulo"]?></td>
+                <td>
+                  <a href="detalhes.php?id=<?= $tarefa['idtarefas'] ?>"><?=$tarefa['titulo']?></a>
+                </td> 
                 <td><?=$tarefa["data"]?></td>
                 <td><?=$tarefa["hora"]?></td>
                 <td><?=$tarefa["idcategoriaFK"]?></td>

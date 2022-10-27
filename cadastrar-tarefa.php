@@ -37,7 +37,7 @@
 <body>
     <div class="formulario">
         <h2>Cadastro de Tarefas</h2>
-        <form method="post" action="db/tarefas-cadastradas.php">
+        <form method="post" action="db/cadastro-tarefas.php">
             <p>
                 Título:
                 <input type="text" name="titulo">
