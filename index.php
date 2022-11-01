@@ -40,7 +40,7 @@
                 <td><?=$tarefa["descricao"]?></td>
                 <td>
                     <a href="excluir.php?id=<?=$tarefa['idtarefas']?>">Excluir</a>
-                    <a href="">Editar</a>
+                    <a href="editar.php?id=<?=$tarefa['idtarefas']?>">Editar</a>
                 </td>
             </tr>
             <?php } ?>

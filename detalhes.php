@@ -18,9 +18,8 @@
    <p><strong>Hora:</strong> <?=$registro["hora"]?></p>
    <p><strong>ID da categoria:</strong> <?=$registro["idcategoriaFK"]?></p>
    <p><strong>Descrição:</strong> <?=$registro["descricao"]?></p>
+   <a href="editar.php?id=<?=$registro['idtarefas']?>">Editar</a>
    <?php } ?>
 
 </body>
 </html>
-
-
