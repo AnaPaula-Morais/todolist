@@ -4,6 +4,12 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+   <style>
+      img{
+         width: 200px;
+         
+      }
+   </style>
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,8 +24,11 @@
    <p><strong>Hora:</strong> <?=$registro["hora"]?></p>
    <p><strong>ID da categoria:</strong> <?=$registro["idcategoriaFK"]?></p>
    <p><strong>Descrição:</strong> <?=$registro["descricao"]?></p>
+   <p>
+      <strong>Imagem:</strong><br>
+      <img src="<?=$registro["imagem"]?>" alt="">
+   </p>
    <a href="editar.php?id=<?=$registro['idtarefas']?>">Editar</a>
-   <?php } ?>
-
+   <?php } ?>  
 </body>
 </html>

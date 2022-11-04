@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("img/chimene-gaspar-VQnKZ6S0p3k-unsplash.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+input{
+    display: block;
+    height: 55px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 16pt;
+    padding: 10px 20px;
+    outline: none;
+}
+input[type=submit]{
+    background-color: hsl(153, 56%, 81%,0.5);
+    border: none;
+    width: 440px;
+    cursor: pointer;
+    
+    
+}
+
+div#container{
+    /* background-color: red; */
+    width: 460px;
+    margin: 150px 100px 0px auto;
+    
+}
+div#container-cad{
+    width: 460px;
+    margin: 60px 100px 0px auto;
+}
+a{
+  color: black;
+  text-decoration: none;
+  text-align: center;  
+  display: block;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+

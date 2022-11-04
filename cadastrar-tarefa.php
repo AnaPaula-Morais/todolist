@@ -37,7 +37,7 @@
 <body>
     <div class="formulario">
         <h2>Cadastro de Tarefas</h2>
-        <form method="post" action="db/cadastro-tarefas.php">
+        <form method="post" enctype="multipart/form-data" action="db/cadastro-tarefas.php">
             <p>
                 Título:
                 <input type="text" name="titulo">
@@ -66,8 +66,8 @@
             </p>
             <br>
             <p>
-                Anexo:
-                <input type="file" name="anexo">
+                Imagem:
+                <input type="file" name="imagem">
             </p>
             <br> 
             <p>
