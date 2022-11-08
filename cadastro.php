@@ -17,7 +17,7 @@
         <h1>Cadastro</h1>
         <form method="POST">
             <input type="text" name="nome" placeholder="Nome" maxlength="50">
-            <input type="email" name="email" placeholder="E-mail" maxlength="60  ">
+            <input type="email" name="email" placeholder="E-mail" maxlength="60">
             <input type="password" name="senha" placeholder="Senha" maxlength="10">
             <input type="password" name="confsenha" placeholder="Confirmar senha">
             <input type="submit" value="Cadastrar">    

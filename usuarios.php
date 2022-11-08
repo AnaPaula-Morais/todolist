@@ -28,7 +28,7 @@
             if($sql->rowCount() > 0){
                 return false;
             }else {
-                $sql=$pdo->prepare("INSERT INTO usuarios (nome,email,senha) VALUES(:n,:e,:s) ");
+                $sql=$pdo->prepare("INSERT INTO utilizador (nome,email,senha) VALUES(:n,:e,:s) ");
                 $sql->bindValue(":n", $nome);
                 $sql->bindValue(":e", $email);
                 $sql->bindValue(":s", md5($senha));
