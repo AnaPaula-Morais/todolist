@@ -4,6 +4,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
    <style>
       img{
          width: 200px;
@@ -17,18 +18,27 @@
    <title>Document</title>
 </head>
 <body>
-   <?php while( $registro = $result->fetch_assoc()){?>
-   <h1>Detalhes da Tarefa</h1>
-   <p><strong>Título da tarefa:</strong> <?=$registro["titulo"]?></p>
-   <p><strong>Data:</strong> <?=$registro["data"]?></p>
-   <p><strong>Hora:</strong> <?=$registro["hora"]?></p>
-   <p><strong>ID da categoria:</strong> <?=$registro["idcategoriaFK"]?></p>
-   <p><strong>Descrição:</strong> <?=$registro["descricao"]?></p>
-   <p>
-      <strong>Imagem:</strong><br>
-      <img src="<?=$registro["imagem"]?>" alt="">
-   </p>
-   <a href="editar.php?id=<?=$registro['idtarefas']?>">Editar</a>
-   <?php } ?>  
+   <div class="container">
+      <table class="table table-striped">
+         <?php while( $registro = $result->fetch_assoc()){?>
+         
+         <h1>Detalhes da Tarefa</h1>
+        
+         <th>
+            <td><p><strong>Título da tarefa:</strong> <?=$registro["titulo"]?></p></td> 
+            <td><p><strong>Data:</strong> <?=$registro["data"]?></p></td>
+            <td><p><strong>Hora:</strong> <?=$registro["hora"]?></p></td> 
+            <td><p><strong>ID da categoria:</strong> <?=$registro["idcategoriaFK"]?></p></td>
+            <td><p><strong>Descrição:</strong> <?=$registro["descricao"]?></p></td>
+            <td>  
+               <p>
+                  <strong>Imagem:</strong><br>
+                  <img src="<?=$registro["imagem"]?>" alt="">
+               </p>
+         </th>  
+      </table> 
+      <a class="btn btn-primary" href="editar.php?id=<?=$registro['idtarefas']?>">Editar</a>
+         <?php } ?>
+   </div> 
 </body>
 </html>

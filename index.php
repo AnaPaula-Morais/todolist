@@ -10,18 +10,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List - Home</title>
-    <style>
-        tr{
-            text-align:center;
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   
 </head>
 <body>
     <div class="container">
         <h1>ToDo List</h1>
-        <a href="cadastrar-tarefa.php"><button>Cadastrar Tarefas</button></a>
+        <a href="cadastrar-tarefa.php"><button class="btn btn-primary">Cadastrar Tarefas</button></a>
         <br><br>
-        <table border="1">
+        <table class="table table-striped" border="1">
             <tr>
                 <td>Título</td>
                 <td>Data</td>

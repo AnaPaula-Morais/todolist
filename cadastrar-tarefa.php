@@ -9,71 +9,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de tarfas</title>
-    <style>
-        *{
-            margin:0px;
-            padding:0px;
-        }
-        .formulario{
-            border: 1px solid gray;
-            width: 40%;
-            height: 50%;
-            padding: 10px;
-            border-radius:10px;
-            margin: 100px 380px 0px auto;
-            
-        }
-        h2{
-            text-align:center;
-        }
-        input{
-            border-radius: 5px;
-            margin-top:5px;
-        }
-        .txtarea{
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <div class="formulario">
+    <div class="container">
         <h2>Cadastro de Tarefas</h2>
         <form method="post" enctype="multipart/form-data" action="db/cadastro-tarefas.php">
-            <p>
-                Título:
-                <input type="text" name="titulo">
-            </p>
-            <br> 
-            <p>
-                Data:
-                <input type="date" name="data">
-            </p>
-            <br> 
-            <p>
-                Hora:
-                <input type="time" name="hora">
-            </p>
-            <br> 
-            <p>
-                Descrição:
+            <div class="form-group">
+                <p>
+                    Título:
+                    <input class="form-control" type="text" name="titulo" required>
+                </p>
+                <br> 
+                <p>
+                    Data:
+                    <input class="form-control" type="date" name="data">
+                </p>
+                <br> 
+                <p>
+                    Hora:
+                    <input class="form-control" type="time" name="hora">
+                </p>
+                <br> 
+                <p>
+                    Descrição:
+                    <br>
+                    <textarea class="form-control"  name="descricao" class="txtarea" cols="40" rows="4"></textarea>
+                </p>
                 <br>
-                <textarea name="descricao" class="txtarea" cols="40" rows="4"></textarea>
-            </p>
-            <br>
-            <p>
-                <?php
-                    include("db/selecionar-categorias.php");
-                ?>
-            </p>
-            <br>
-            <p>
-                Imagem:
-                <input type="file" name="imagem">
-            </p>
-            <br> 
-            <p>
-                <button>Cadastrar</button>
-            </p> 
+                <p>
+                    <?php
+                        include("db/selecionar-categorias.php");
+                    ?>
+                </p>
+                <br>
+                <p>
+                    Imagem:
+                    <input class="form-control" type="file" name="imagem">
+                </p>
+                <br> 
+                <p>
+                    <button class="btn btn-primary">Cadastrar</button>
+                </p> 
+            </div>
         </form>
     </div>
 </body>

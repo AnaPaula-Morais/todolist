@@ -24,55 +24,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de tarfas</title>
-    <style>
-        *{
-            margin:0px;
-            padding:0px;
-        }
-        .formulario{
-            border: 1px solid gray;
-            width: 40%;
-            height: 50%;
-            padding: 10px;
-            border-radius:10px;
-            margin: 100px 380px 0px auto;
-            
-        }
-        h2{
-            text-align:center;
-        }
-        input{
-            border-radius: 5px;
-            margin-top:5px;
-        }
-        .txtarea{
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   
 </head>
 <body>
-    <div class="formulario">
+    <div class="container">
         <h2>Editar Tarefas</h2>
         <form method="post">
             <p>
                 Título:
-                <input type="text" name="titulo" value="<?php echo $titulo?>">
+                <input class="form-control" type="text" name="titulo" value="<?php echo $titulo?>">
             </p>
             <br> 
             <p>
                 Data:
-                <input type="date" name="data" value="<?php echo $data?>">
+                <input class="form-control" type="date" name="data" value="<?php echo $data?>">
             </p>
             <br> 
             <p>
                 Hora:
-                <input type="time" name="hora" value="<?php echo $hora?>">
+                <input class="form-control" type="time" name="hora" value="<?php echo $hora?>">
             </p>
             <br> 
             <p>
                 Descrição:
                 <br>
-                <textarea name="descricao" class="txtarea" cols="40" rows="4"> <?php echo $descricao?></textarea>
+                <textarea class="form-control" name="descricao" class="txtarea" cols="40" rows="4"> <?php echo $descricao?></textarea>
             </p>
             <br>
             <p>
@@ -83,11 +60,11 @@
             <br>
             <p>
                 Anexo:
-                <input type="file" name="anexo">
+                <input class="form-control" type="file" name="anexo">
             </p>
             <br> 
             <p>
-                <button>Editar</button>
+                <button class="btn btn-primary">Editar</button>
             </p> 
         </form>
     </div>

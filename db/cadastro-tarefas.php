@@ -20,6 +20,7 @@ $sql-> bindValue(':nome', '../arquivos/'.$nome);
 $sql->execute();
 
 header("location: ../index.php");
+exit;
 
 // include("config.php");
 // 1-pegar dados enviados
