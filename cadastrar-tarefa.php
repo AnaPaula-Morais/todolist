@@ -1,5 +1,6 @@
 <?php
-    include("db/config.php");
+    require 'pdo/configpdo.php';
+    // include("db/config.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

@@ -1,6 +1,7 @@
 <?php
-    include("db/config.php");
-    $result=$conn->query("select * from tarefas");
+    require 'pdo/configpdo.php';
+    // include("db/config.php");
+    $sql=$pdo->query("select * from tarefas");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +30,7 @@
                 <td>Descrição</td>
                 <td>Opções</td>
             </tr>
-            <?php foreach($result as $tarefa){ ?>
+            <?php foreach($sql as $tarefa){ ?>
             <tr>
                 <td>
                   <a href="detalhes.php?id=<?= $tarefa['idtarefas']?>"><?=$tarefa['titulo']?></a>
