@@ -27,7 +27,6 @@ input{
 input[type=submit]{
     background-color: hsl(153, 56%, 81%,0.5);
     border: none;
-    width: 440px;
     cursor: pointer;
     
     

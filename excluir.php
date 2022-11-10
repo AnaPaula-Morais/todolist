@@ -5,5 +5,5 @@
     include("db/config.php");
     $conn->query("delete from tarefas where idtarefas = $id");
     
-    header("Location: index.php");
+    header("Location: listarTarefas.php");
 ?>

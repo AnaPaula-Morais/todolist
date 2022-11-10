@@ -10,17 +10,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - ToDo List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="container-cad">
         <h1>Cadastro</h1>
         <form method="POST">
-            <input type="text" name="nome" placeholder="Nome" maxlength="50">
-            <input type="email" name="email" placeholder="E-mail" maxlength="60">
-            <input type="password" name="senha" placeholder="Senha" maxlength="10">
-            <input type="password" name="confsenha" placeholder="Confirmar senha">
-            <input type="submit" value="Cadastrar">    
+            <div class="form-group">
+                <input class="form-control" type="text" name="nome" placeholder="Nome" maxlength="50">
+                <input class="form-control" type="email" name="email" placeholder="E-mail" maxlength="60">
+                <input class="form-control" type="password" name="senha" placeholder="Senha" maxlength="10">
+                <input class="form-control" type="password" name="confsenha" placeholder="Confirmar senha">
+                <input style="width: 460px" class="form-control" type="submit" value="Cadastrar"> 
+                </div>
         </form>
     </div>
     <?php

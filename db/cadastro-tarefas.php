@@ -19,7 +19,7 @@ $sql-> bindValue(':categoria', $categoria);
 $sql-> bindValue(':nome', '../arquivos/'.$nome);
 $sql->execute();
 
-header("location: ../index.php");
+header("location: ../listarTarefas.php");
 exit;
 
 // include("config.php");
