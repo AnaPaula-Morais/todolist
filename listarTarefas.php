@@ -15,9 +15,9 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="listarTarefas.php">Início</a>
-            <a class="navbar-brand" href="#">Logout</a>    
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <a  style="padding:10px" class="navbar-brand mb-0 h1" href="listarTarefas.php">Início</a>
+            <a class="navbar-brand mb-0 h1" href="logout.php">Logout</a>    
         </nav>
         <h1>ToDo List</h1>
         <a href="cadastrar-tarefa.php"><button class="btn btn-primary">Cadastrar Tarefas</button></a>
